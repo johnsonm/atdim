@@ -1,0 +1,306 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:attiny
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:open-project
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "13 nov 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-T IC1
+U 1 1 5461803C
+P 4100 2600
+F 0 "IC1" H 2950 3000 40  0000 C CNN
+F 1 "ATTINY85-T" H 5100 2200 40  0000 C CNN
+F 2 "DIP8" H 5100 2600 35  0000 C CIN
+F 3 "~" H 4100 2600 60  0000 C CNN
+	1    4100 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_4 P1
+U 1 1 54618077
+P 3200 1050
+F 0 "P1" V 3150 1050 50  0000 C CNN
+F 1 "CONN_4" V 3250 1050 50  0000 C CNN
+F 2 "~" H 3200 1050 60  0000 C CNN
+F 3 "~" H 3200 1050 60  0000 C CNN
+	1    3200 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 7805 U1
+U 1 1 546185D9
+P 1950 2400
+F 0 "U1" H 2100 2204 60  0000 C CNN
+F 1 "7805" H 1950 2600 60  0000 C CNN
+F 2 "~" H 1950 2400 60  0000 C CNN
+F 3 "~" H 1950 2400 60  0000 C CNN
+	1    1950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P2
+U 1 1 54618647
+P 5000 1050
+F 0 "P2" V 4950 1050 60  0000 C CNN
+F 1 "ICSP" V 5050 1050 60  0000 C CNN
+F 2 "~" H 5000 1050 60  0000 C CNN
+F 3 "~" H 5000 1050 60  0000 C CNN
+	1    5000 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 54618726
+P 1100 2550
+F 0 "C1" H 1100 2650 40  0000 L CNN
+F 1 "1uF" H 1106 2465 40  0000 L CNN
+F 2 "~" H 1138 2400 30  0000 C CNN
+F 3 "~" H 1100 2550 60  0000 C CNN
+	1    1100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 5461876D
+P 1350 2550
+F 0 "C2" H 1400 2650 50  0000 L CNN
+F 1 "47uF" H 1400 2450 50  0000 L CNN
+F 2 "~" H 1350 2550 60  0000 C CNN
+F 3 "~" H 1350 2550 60  0000 C CNN
+	1    1350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 546187BF
+P 2500 2550
+F 0 "C3" H 2500 2650 40  0000 L CNN
+F 1 "10uF" H 2506 2465 40  0000 L CNN
+F 2 "~" H 2538 2400 30  0000 C CNN
+F 3 "~" H 2500 2550 60  0000 C CNN
+	1    2500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5461883F
+P 6200 3100
+F 0 "R2" V 6280 3100 40  0000 C CNN
+F 1 "1M" V 6207 3101 40  0000 C CNN
+F 2 "~" V 6130 3100 30  0000 C CNN
+F 3 "~" H 6200 3100 30  0000 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV1
+U 1 1 54618928
+P 6400 1600
+F 0 "RV1" H 6400 1500 50  0000 C CNN
+F 1 "100K" H 6400 1600 50  0000 C CNN
+F 2 "~" H 6400 1600 60  0000 C CNN
+F 3 "~" H 6400 1600 60  0000 C CNN
+	1    6400 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MOSFET_N Q1
+U 1 1 5461894E
+P 6400 2850
+F 0 "Q1" H 6410 3020 60  0000 R CNN
+F 1 "MOSFET_N" H 7000 2850 60  0000 R CNN
+F 2 "~" H 6400 2850 60  0000 C CNN
+F 3 "~" H 6400 2850 60  0000 C CNN
+	1    6400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PHOTOR PHOTOR1
+U 1 1 5461F1C9
+P 7400 2150
+F 0 "PHOTOR1" V 7480 2150 50  0000 C CNN
+F 1 "PHOTOR" V 7400 2150 50  0000 C CNN
+F 2 "~" H 7400 2150 60  0000 C CNN
+F 3 "~" H 7400 2150 60  0000 C CNN
+	1    7400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5462B8A8
+P 7400 2650
+F 0 "R1" V 7480 2650 40  0000 C CNN
+F 1 "10K" V 7407 2651 40  0000 C CNN
+F 2 "~" V 7330 2650 30  0000 C CNN
+F 3 "~" H 7400 2650 30  0000 C CNN
+	1    7400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2850 1100 2750
+Wire Wire Line
+	1350 2750 1350 2850
+Connection ~ 1350 2850
+Wire Wire Line
+	1950 2850 1950 2650
+Connection ~ 1950 2850
+Wire Wire Line
+	2500 2850 2500 2750
+Connection ~ 2500 2850
+Wire Wire Line
+	5450 2850 6200 2850
+Wire Wire Line
+	6500 3050 6500 3350
+Wire Wire Line
+	6500 3350 6200 3350
+Wire Wire Line
+	5450 2450 6250 2450
+Wire Wire Line
+	6250 2450 6250 1600
+Wire Wire Line
+	5450 2550 6550 2550
+Wire Wire Line
+	6550 2550 6550 2400
+Wire Wire Line
+	6550 2400 7400 2400
+$Comp
+L +12V #PWR01
+U 1 1 5462BA9D
+P 3050 1400
+F 0 "#PWR01" H 3050 1350 20  0001 C CNN
+F 1 "+12V" V 3100 1500 30  0000 C CNN
+F 2 "" H 3050 1400 60  0000 C CNN
+F 3 "" H 3050 1400 60  0000 C CNN
+	1    3050 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5462BAB1
+P 3350 1400
+F 0 "#PWR02" H 3350 1400 30  0001 C CNN
+F 1 "GND" H 3350 1330 30  0001 C CNN
+F 2 "" H 3350 1400 60  0000 C CNN
+F 3 "" H 3350 1400 60  0000 C CNN
+	1    3350 1400
+	0    -1   -1   0   
+$EndComp
+Text Label 1100 2350 2    60   ~ 0
++12V
+Text Label 2750 2350 2    60   ~ 0
+VCC
+Text Label 2750 2850 2    60   ~ 0
+GND
+Text Label 3050 1400 3    60   ~ 0
++12V
+Text Label 3150 1400 3    60   ~ 0
++12V
+Text Label 3250 1400 3    60   ~ 0
+DRAIN
+Text Label 3350 1400 3    60   ~ 0
+GND
+Text Label 4750 1400 3    60   ~ 0
+GND
+Text Label 4850 1400 3    60   ~ 0
+SCK
+Text Label 4950 1400 3    60   ~ 0
+VCC
+Text Label 5050 1400 3    60   ~ 0
+MISO
+Text Label 5150 1400 3    60   ~ 0
+MOSI
+Text Label 5250 1400 3    60   ~ 0
+~RESET
+Text Label 6400 1350 0    60   ~ 0
+VCC
+Text Label 6400 1850 0    60   ~ 0
+GND
+Text Label 7400 1900 0    60   ~ 0
+VCC
+Text Label 7400 2900 0    60   ~ 0
+GND
+Text Label 6200 3350 2    60   ~ 0
+GND
+Text Label 5450 2350 0    60   ~ 0
+~RESET
+Text Label 5450 2450 0    60   ~ 0
+ADC2
+Text Label 6250 1600 2    60   ~ 0
+ADC2
+Text Label 5450 2550 0    60   ~ 0
+ADC3
+Text Label 7400 2400 0    60   ~ 0
+ADC3
+Text Label 5450 2650 0    60   ~ 0
+SCK
+Text Label 5450 2750 0    60   ~ 0
+MISO
+Text Label 5450 2850 0    60   ~ 0
+MOSI
+Text Label 6500 2650 0    60   ~ 0
+DRAIN
+Wire Wire Line
+	1100 2350 1550 2350
+Connection ~ 1350 2350
+Wire Wire Line
+	2350 2350 2750 2350
+Connection ~ 2500 2350
+Wire Wire Line
+	1100 2850 2750 2850
+Wire Wire Line
+	3050 1400 3150 1400
+$Comp
+L C C4
+U 1 1 5462CC33
+P 5450 2150
+F 0 "C4" H 5450 2250 40  0000 L CNN
+F 1 "10n" H 5456 2065 40  0000 L CNN
+F 2 "~" H 5488 2000 30  0000 C CNN
+F 3 "~" H 5450 2150 60  0000 C CNN
+	1    5450 2150
+	1    0    0    -1  
+$EndComp
+Text Label 5450 1950 0    60   ~ 0
+GND
+$EndSCHEMATC

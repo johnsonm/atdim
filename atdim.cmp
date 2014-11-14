@@ -1,0 +1,94 @@
+Cmp-Mod V01 Created by CvPcb (2013-june-11)-stable date = Tue 11 Nov 2014 10:13:09 PM EST
+
+BeginCmp
+TimeStamp = /54618726;
+Reference = C1;
+ValeurCmp = 10uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5461876D;
+Reference = C2;
+ValeurCmp = 470uF;
+IdModule  = C1V7;
+EndCmp
+
+BeginCmp
+TimeStamp = /546187BF;
+Reference = C3;
+ValeurCmp = 4.7uF;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5462CC33;
+Reference = C4;
+ValeurCmp = 10n;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5461803C;
+Reference = IC1;
+ValeurCmp = ATTINY85-T;
+IdModule  = DIP-8__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /54618077;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /54618647;
+Reference = P2;
+ValeurCmp = ICSP;
+IdModule  = PIN_ARRAY-6X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5461F1C9;
+Reference = PHOTOR1;
+ValeurCmp = PHOTOR;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5461894E;
+Reference = Q1;
+ValeurCmp = MOSFET_N;
+IdModule  = TO220_VERT;
+EndCmp
+
+BeginCmp
+TimeStamp = /5462B8A8;
+Reference = R1;
+ValeurCmp = 10K;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /5461883F;
+Reference = R2;
+ValeurCmp = 1M;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /54618928;
+Reference = RV1;
+ValeurCmp = 100K;
+IdModule  = POTA_Fav;
+EndCmp
+
+BeginCmp
+TimeStamp = /546185D9;
+Reference = U1;
+ValeurCmp = 7805;
+IdModule  = TO220_VERT;
+EndCmp
+
+EndListe

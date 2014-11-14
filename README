@@ -1,0 +1,32 @@
+This design for an attiny-based PWM dimmer circuit is licensed under
+the CERN OHL as provided in the file cern_ohl_v_1_2.txt
+
+This project requires that you set the open-project library references
+to point to a checkout of git@github.com:open-project/kicadlibrary.git
+The attiny part included is a variant on the version in the atmel
+library with two pins moved for cosmetic purposes.
+
+Options:
+
+P1 may be 0.1" pitch header or screw terminal
+Place P2 (ICSP) only if ICSP function desired
+Three 4mm mounting holes provided
+
+PHOTOR1 may be a 2-pin 0.1" header to a remote photoresistor
+PHOTOR1 and R1 may be omitted if light sensing is not desired
+
+RV1 may be a 0.2" pitch potentiometer, a 0.1" pitch potentiometer,
+a 0.1" pitch trim potentiometer, or a 3-conductor 0.1" or 0.2"
+pitch connector (header or molex) to a remote potentiometer.
+If you are using a 0.1" pitch part, solder the smaller pads first
+as the middle pad's through-hole is sized to accomodate the larger
+legs on typical 0.2" pitch potentiometers.
+
+ATTINY85-T is any ATTINY*5 through-hole part that can hold your
+desired program.
+
+For low-profile applications:
+Install ATTINY*5 directly soldered, not in a socket
+C2 installed flat, with leads bent towards C1
+U1 (7805) installed with bent leads over flat C2 and R2
+Q1 (MOSFET) installed with bent leads over ATTINY*5
