@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/johnsonm/d/atdim/atdim.sch)
-    (date "Wed 12 Nov 2014 10:29:51 PM EST")
+    (date "Fri 14 Nov 2014 10:04:41 PM EST")
     (tool "eeschema (2013-june-11)-stable"))
   (components
     (comp (ref IC1)
@@ -61,7 +61,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5461F1C9))
     (comp (ref R1)
-      (value 10K)
+      (value 47K)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 5462B8A8))
@@ -174,12 +174,12 @@
         (pin (num GND) (name GND) (type input))
         (pin (num VI) (name VI) (type input))
         (pin (num VO) (name VO) (type power_out))))
-    (libpart (lib attiny) (part ATTINY25-T)
-      (description "ATTINY85, PDIP8, 2k Flash, 128B SRAM, 128B EEPROM, Debug Wire")
+    (libpart (lib attiny) (part ATTINY85-T)
+      (description "ATTINY85, PDIP8, 8k Flash, 512B SRAM, 512B EEPROM, Debug Wire")
       (docs http://www.atmel.com/dyn/resources/prod_documents/doc2586.pdf)
       (fields
         (field (name Reference) IC)
-        (field (name Value) ATTINY25-T)
+        (field (name Value) ATTINY85-T)
         (field (name Footprint) DIP8)
         (field (name Datasheet) ~))
       (pins
