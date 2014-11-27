@@ -22,11 +22,16 @@ If you are using a 0.1" pitch part, solder the smaller pads first
 as the middle pad's through-hole is sized to accomodate the larger
 legs on typical 0.2" pitch potentiometers.
 
+R3 is an optional pull-up resistor to ensure that the MOSFET
+switches off cleanly at low duty cycle as described in.
+https://gasstationwithoutpumps.wordpress.com/2014/07/28/pwm-controller/
+
 ATTINY85-T is any ATTINY*5 through-hole part that can hold your
 desired program.
 
 For low-profile applications:
 Install ATTINY*5 directly soldered, not in a socket
-C2 installed flat, with leads bent towards C1
+R3 (if used) installed on the bottom of the board to accomodate flat C2
+C2 installed flat, with leads bent, towards C1
 U1 (7805) installed with bent leads over flat C2 and R2
 Q1 (MOSFET) installed with bent leads over ATTINY*5
