@@ -690,7 +690,7 @@
     )
   )
 
-  (gr_text "GND   SCK   VCC MISO  MOSI  /RESET" (at 112.522 123.952) (layer F.SilkS)
+  (gr_text "GND   SCK   VCC MISO  MOSI  ~RESET" (at 112.395 124.079) (layer F.SilkS)
     (effects (font (size 0.5 0.5) (thickness 0.125)))
   )
   (gr_text L- (at 102.743 105.029) (layer F.SilkS)
