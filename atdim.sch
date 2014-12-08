@@ -31,13 +31,14 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:open-project
+LIBS:atdim-cache
 EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "15 nov 2014"
+Date "8 dec 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -125,12 +126,12 @@ $EndComp
 $Comp
 L R R2
 U 1 1 5461883F
-P 6200 3100
-F 0 "R2" V 6280 3100 40  0000 C CNN
-F 1 "1M" V 6207 3101 40  0000 C CNN
-F 2 "~" V 6130 3100 30  0000 C CNN
-F 3 "~" H 6200 3100 30  0000 C CNN
-	1    6200 3100
+P 6200 3650
+F 0 "R2" V 6280 3650 40  0000 C CNN
+F 1 "1M" V 6207 3651 40  0000 C CNN
+F 2 "~" V 6130 3650 30  0000 C CNN
+F 3 "~" H 6200 3650 30  0000 C CNN
+	1    6200 3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -147,12 +148,12 @@ $EndComp
 $Comp
 L MOSFET_N Q1
 U 1 1 5461894E
-P 6400 2850
-F 0 "Q1" H 6410 3020 60  0000 R CNN
-F 1 "MOSFET_N" H 7000 2850 60  0000 R CNN
-F 2 "~" H 6400 2850 60  0000 C CNN
-F 3 "~" H 6400 2850 60  0000 C CNN
-	1    6400 2850
+P 6400 3400
+F 0 "Q1" H 6410 3570 60  0000 R CNN
+F 1 "MOSFET_N" H 7000 3400 60  0000 R CNN
+F 2 "~" H 6400 3400 60  0000 C CNN
+F 3 "~" H 6400 3400 60  0000 C CNN
+	1    6400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -189,11 +190,9 @@ Wire Wire Line
 	2500 2850 2500 2750
 Connection ~ 2500 2850
 Wire Wire Line
-	5450 2850 6200 2850
+	6500 3600 6500 3900
 Wire Wire Line
-	6500 3050 6500 3350
-Wire Wire Line
-	6500 3350 6200 3350
+	6500 3900 6200 3900
 Wire Wire Line
 	5450 2450 6250 2450
 Wire Wire Line
@@ -227,15 +226,13 @@ F 3 "" H 3350 1400 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1100 2350 2    60   ~ 0
-+12V
++12VS
 Text Label 2750 2350 2    60   ~ 0
 VCC
 Text Label 2750 2850 2    60   ~ 0
 GND
-Text Label 3050 1400 3    60   ~ 0
-+12V
 Text Label 3150 1400 3    60   ~ 0
-+12V
++12VS
 Text Label 3250 1400 3    60   ~ 0
 DRAIN
 Text Label 3350 1400 3    60   ~ 0
@@ -260,7 +257,7 @@ Text Label 7400 1900 0    60   ~ 0
 VCC
 Text Label 7400 2900 0    60   ~ 0
 GND
-Text Label 6200 3350 2    60   ~ 0
+Text Label 6200 3900 2    60   ~ 0
 GND
 Text Label 5450 2350 0    60   ~ 0
 ~RESET
@@ -278,7 +275,7 @@ Text Label 5450 2750 0    60   ~ 0
 MISO
 Text Label 5450 2850 0    60   ~ 0
 MOSI
-Text Label 6500 2650 0    60   ~ 0
+Text Label 6500 3200 0    60   ~ 0
 DRAIN
 Wire Wire Line
 	1100 2350 1550 2350
@@ -288,8 +285,6 @@ Wire Wire Line
 Connection ~ 2500 2350
 Wire Wire Line
 	1100 2850 2750 2850
-Wire Wire Line
-	3050 1400 3150 1400
 $Comp
 L C C4
 U 1 1 5462CC33
@@ -303,4 +298,42 @@ F 3 "~" H 5450 2150 60  0000 C CNN
 $EndComp
 Text Label 5450 1950 0    60   ~ 0
 GND
+Wire Wire Line
+	6200 3400 5450 3400
+Wire Wire Line
+	5450 3400 5450 2850
+$Comp
+L R R3
+U 1 1 54771078
+P 6500 2950
+F 0 "R3" V 6580 2950 40  0000 C CNN
+F 1 "10K" V 6507 2951 40  0000 C CNN
+F 2 "~" V 6430 2950 30  0000 C CNN
+F 3 "~" H 6500 2950 30  0000 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+Text Label 6500 2700 0    60   ~ 0
++12VS
+$Comp
+L R FR1
+U 1 1 54850EF1
+P 2900 1800
+F 0 "FR1" V 2980 1800 40  0000 C CNN
+F 1 "1R" V 2907 1801 40  0000 C CNN
+F 2 "~" V 2830 1800 30  0000 C CNN
+F 3 "~" H 2900 1800 30  0000 C CNN
+	1    2900 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 1400 3150 1800
+Wire Wire Line
+	3050 1400 3050 1600
+Wire Wire Line
+	3050 1600 2650 1600
+Wire Wire Line
+	2650 1600 2650 1800
+Text Notes 2450 1950 0    60   ~ 0
+Fusible resistor or jumper
 $EndSCHEMATC

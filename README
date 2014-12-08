@@ -15,6 +15,10 @@ Three 4mm mounting holes provided
 PHOTOR1 may be a 2-pin 0.1" header to a remote photoresistor
 PHOTOR1 and R1 may be omitted if light sensing is not desired
 
+FR1 may be a fusible resistor of an appropriate rating and value
+for the load if the circuit is not otherwise protected, or a
+jumper if it is sufficiently protected otherwise.
+
 RV1 may be a 0.2" pitch potentiometer, a 0.1" pitch potentiometer,
 a 0.1" pitch trim potentiometer, or a 3-conductor 0.1" or 0.2"
 pitch connector (header or molex) to a remote potentiometer.
