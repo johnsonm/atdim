@@ -31,7 +31,6 @@ desired program.
 
 For low-profile applications:
 Install ATTINY*5 directly soldered, not in a socket
-R3 (if used) installed on the bottom of the board to accomodate flat C2
-C2 installed flat, with leads bent, towards C1
-U1 (7805) installed with bent leads over flat C2 and R2
+U1 (7805) installed with bent leads over R2 and R3
 Q1 (MOSFET) installed with bent leads over ATTINY*5
+Use remote or low-profile potentiometer for RV1
