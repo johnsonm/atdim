@@ -30,6 +30,9 @@ R3 is an optional pull-up resistor to ensure that the MOSFET
 switches off cleanly at low duty cycle as described in.
 https://gasstationwithoutpumps.wordpress.com/2014/07/28/pwm-controller/
 
+D1 is a freewheel transient suppressing diode required only for
+inductive loads such as motor control.
+
 ATTINY85-T is any ATTINY*5 through-hole part that can hold your
 desired program.
 
