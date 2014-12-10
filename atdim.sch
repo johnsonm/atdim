@@ -336,4 +336,21 @@ Wire Wire Line
 	2650 1600 2650 1800
 Text Notes 2450 1950 0    60   ~ 0
 Fusible resistor or jumper
+$Comp
+L DIODE D1
+U 1 1 54851518
+P 7000 2900
+F 0 "D1" H 7000 3000 40  0000 C CNN
+F 1 "DIODE" H 7000 2800 40  0000 C CNN
+F 2 "~" H 7000 2900 60  0000 C CNN
+F 3 "~" H 7000 2900 60  0000 C CNN
+	1    7000 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6500 2700 7000 2700
+Wire Wire Line
+	6500 3200 7000 3200
+Wire Wire Line
+	7000 3200 7000 3100
 $EndSCHEMATC
